@@ -4,13 +4,43 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <link
+
             href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
             rel="stylesheet"
+
         />
-        <title>Elephant vs Lion App</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Kemangi X Seledri</title>
     </head>
     <body>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#seledri" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Seledri</a>
+    <a href="#kemangi" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Kemangi</a>
+    <a href="#classification" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Image Classification</a>
+  </div>
+</div>
+
+
+
+          <!--
+            Dropdown menu, show/hide based on menu state.
+
+            Entering: "transition ease-out duration-100"
+              From: "transform opacity-0 scale-95"
+              To: "transform opacity-100 scale-100"
+            Leaving: "transition ease-in duration-75"
+              From: "transform opacity-100 scale-100"
+              To: "transform opacity-0 scale-95"
+          -->
+<br>
+
         <section
             class="
                 flex
@@ -18,8 +48,9 @@
                 items-center
                 w-screen
                 h-screen
-                bg-indigo-500
+                bg-indigo-200
             "
+            id = "classification"
         >
             <main
                 class="
@@ -31,7 +62,7 @@
                     rounded-lg
                 "
             >
-                <h1 class="text-3xl text-bold">Elephant vs Lion</h1>
+                <h1 class="text-3xl text-bold" >Kemangi X Seledri</h1>
 
                 {% if uploaded_image %}
                 <img
@@ -52,7 +83,7 @@
                     "
                 >
                     <p class="text-center">
-                        Masukkan gambar gajah atau singa
+                        Masukkan gambar Kemangi atau Seledri
                     </p>
                 </div>
                 {% endif %} {% if prediction %}
@@ -84,17 +115,25 @@
                 </form>
             </main>
         </section>
-        <footer class="flex gap-x-8 justify-center items-center h-32 bg-white">
-            <img
-                class="h-16"
-                src="https://digitalent.kominfo.go.id/assets/@images/logo.png"
-                alt="logo-dts"
-            />
-            <img
-                class="h-16"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Logo_of_Ministry_of_Communication_and_Information_Technology_of_the_Republic_of_Indonesia.svg/1200px-Logo_of_Ministry_of_Communication_and_Information_Technology_of_the_Republic_of_Indonesia.svg.png"
-                alt=""
-            />
-        </footer>
+        <br><br>
+
+    <div class="w3-container w3-content w3-center w3-padding-64 " style="max-width:800px" id="seledri">
+    <h2 class="w3-wide " >Seledri</h2>
+    <p class="w3-opacity"><i>Apium graveolens L.</i></p>
+    <p class="w3-justify">Seledri adalah terna kecil, kurang dari 1m tingginya. Daun tersusun gemuk dengan tangkai pendek. Tangkai ini pada kultivar tertentu dapat sangat besar dan dijual sebagai sayuran terpisah dari emaknya. Batangnya biasanya sangat bantet. Pada kelompok budidaya tertentu membesar membentuk umbi, yang juga dapat dimakan. Bunganya tersusun majemuk berkarang. Buahnya kecil-kecil berwarna coklat gelap.</p>
+        </div>
+<br><br><br><br><br><br><br><br><br><br>
+    <div class="w3-container w3-content w3-center w3-padding-64 bg-green-100 " style="max-width:2000" id="kemangi">
+    <h2 class="w3-wide " >Kemangi</h2>
+    <p class="w3-opacity"><i>Ocimum basilicum</i></p>
+    <p class="w3-justify">Kemangi adalah tumbuhan tahunan yang tumbuh tegak dengan cabang yang banyak. Tanaman ini berbentuk perdu yang tingginya dapat mencapai 100 cm. Bunganya tersusun di tandan yang tegak. Daunnya panjang, tegak, berbentuk taji atau bulat telur, berwarna hijau muda dan berbau harum. Ujung daun bisa tumpul atau bisa juga tajam, panjangnya mencapai 5 cm. Permukaan bergerigi atau juga rata. Wanginya seperti cengkih dan rasanya pahit.
+
+            Daun kemangi mengandung beberapa zat yang bermanfaat bagi tubuh, seperti vitamin A, B, C, betakaroten, kalsium, magnesium, fosfor, protein, karbohidrat, lemak, zat besi, flavonoid, arginin, anetol dan boron</p>
+        </div>
     </body>
+    <br><br><br><br>
+<footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-github w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://github.com/Reza-224/Final-Project-AI-5E" target="_blank">Kelompok 1 AI 5E</a></p>
+</footer>
 </html>
